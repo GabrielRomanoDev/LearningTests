@@ -28,7 +28,8 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
-        
+        let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: RegisterViewController.identifier) as? RegisterViewController
+        present(vc ?? UIViewController(), animated: true)
     }
     
     private func setupCollectionView() {

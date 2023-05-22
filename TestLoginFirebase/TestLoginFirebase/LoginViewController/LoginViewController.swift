@@ -10,14 +10,40 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var emailStackView: UIStackView!
     @IBOutlet weak var emailTextField: PaddedTextField!
     @IBOutlet weak var emailPlaceholderLabel: UILabel!
     @IBOutlet weak var emailPlaceholderHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var emailErrorIndicatorLine: UIView!
+    @IBOutlet weak var passwordStackView: UIStackView!
     @IBOutlet weak var passwordTextField: PaddedTextField!
     @IBOutlet weak var passwordPlaceholderLabel: UILabel!
     @IBOutlet weak var passwordPlaceholderHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var passwordErrorIndicatorLine: UIView!
     @IBOutlet weak var textFieldsDistanceConstraint: NSLayoutConstraint!
     @IBOutlet weak var signInButton: UIButton!
+    
+    lazy var emailErrorLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = ""
+        label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        label.textColor = .orange
+        label.textAlignment = .justified
+        label.numberOfLines = 2
+        return label
+    }()
+    
+    lazy var passwordErrorLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = ""
+        label.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        label.textColor = .orange
+        label.textAlignment = .justified
+        label.numberOfLines = 2
+        return label
+    }()
     
     static let identifier:String = String(describing: LoginViewController.self)
     
@@ -37,12 +63,24 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tappedSignInButton(_ sender: UIButton) {
+        
+        view.endEditing(true)
+        
         if validateFields() {
             print("sign in")
         } else {
-            print("Erro")
+            if emailTextField.text?.count ?? 0 < 5 {
+                emailStackView.addArrangedSubview(emailErrorLabel)
+                emailErrorLabel.text = "Your email must contain beetween 5 and 60 characters."
+                emailErrorIndicatorLine.isHidden = false
+            } else if passwordTextField.text?.count ?? 0 < 4 {
+                passwordStackView.addArrangedSubview(passwordErrorLabel)
+                passwordErrorLabel.text = "Your password must contain beetween 4 and 60 characters."
+                passwordErrorIndicatorLine.isHidden = false
+            }
         }
     }
+    
     private func setupButtons() {
         backButton.setTitle("", for: .normal)
         
@@ -71,6 +109,7 @@ class LoginViewController: UIViewController {
     private func SetuptextFields() {
         emailTextField.delegate = self
         emailTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
+        emailTextField.textContentType = .emailAddress
         emailTextField.autocorrectionType = .no
         
         passwordTextField.delegate = self
@@ -108,6 +147,14 @@ extension LoginViewController: UITextFieldDelegate {
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField == emailTextField {
+            emailErrorLabel.removeFromSuperview()
+            emailErrorIndicatorLine.isHidden = true
+        } else if textField == passwordTextField {
+            passwordErrorLabel.removeFromSuperview()
+            passwordErrorIndicatorLine.isHidden = true
+        }
+        
         if validateFields() {
             signInButton.backgroundColor = .red
             signInButton.clipsToBounds = true
