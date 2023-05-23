@@ -21,8 +21,10 @@
 		A1F1501E2A17B95500DC0649 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1501D2A17B95500DC0649 /* LoginViewController.swift */; };
 		A1F150202A17B95E00DC0649 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F1501F2A17B95E00DC0649 /* LoginViewController.storyboard */; };
 		A1F150232A1BBFB300DC0649 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150222A1BBFB300DC0649 /* PaddedTextField.swift */; };
-		A1F150262A1BFA0C00DC0649 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150252A1BFA0C00DC0649 /* RegisterViewController.swift */; };
-		A1F150282A1BFA1200DC0649 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F150272A1BFA1200DC0649 /* RegisterViewController.storyboard */; };
+		A1F150262A1BFA0C00DC0649 /* CheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */; };
+		A1F150282A1BFA1200DC0649 /* CheckEmailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */; };
+		A1F1502B2A1C47CB00DC0649 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */; };
+		A1F1502D2A1C47DA00DC0649 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +43,10 @@
 		A1F1501D2A17B95500DC0649 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1F1501F2A17B95E00DC0649 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		A1F150222A1BBFB300DC0649 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
-		A1F150252A1BFA0C00DC0649 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		A1F150272A1BFA1200DC0649 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewController.swift; sourceTree = "<group>"; };
+		A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckEmailViewController.storyboard; sourceTree = "<group>"; };
+		A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				A1BAE7EA2A171EFC00A2B086 /* MainViewController */,
 				A1F1501C2A17B91300DC0649 /* LoginViewController */,
 				A1F150242A1BF9EF00DC0649 /* RegisterViewController */,
+				A1F150292A1C47AC00DC0649 /* heckEmailViewController */,
 				A1BAE7D12A17121100A2B086 /* AppDelegate.swift */,
 				A1BAE7D32A17121100A2B086 /* SceneDelegate.swift */,
 				A1BAE7DA2A17121200A2B086 /* Assets.xcassets */,
@@ -138,10 +143,19 @@
 		A1F150242A1BF9EF00DC0649 /* RegisterViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A1F150272A1BFA1200DC0649 /* RegisterViewController.storyboard */,
-				A1F150252A1BFA0C00DC0649 /* RegisterViewController.swift */,
+				A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */,
+				A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */,
 			);
 			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		A1F150292A1C47AC00DC0649 /* heckEmailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */,
+				A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */,
+			);
+			path = heckEmailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +225,11 @@
 				A1BAE7DE2A17121200A2B086 /* LaunchScreen.storyboard in Resources */,
 				A1BAE7E62A17132E00A2B086 /* GoogleService-Info.plist in Resources */,
 				A1BAE7DB2A17121200A2B086 /* Assets.xcassets in Resources */,
-				A1F150282A1BFA1200DC0649 /* RegisterViewController.storyboard in Resources */,
+				A1F150282A1BFA1200DC0649 /* CheckEmailViewController.storyboard in Resources */,
 				A1F150202A17B95E00DC0649 /* LoginViewController.storyboard in Resources */,
 				A1BAE7EF2A17225D00A2B086 /* NetflixCollectionViewCell.xib in Resources */,
 				A1BAE7D92A17121100A2B086 /* MainViewController.storyboard in Resources */,
+				A1F1502B2A1C47CB00DC0649 /* RegisterViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,9 +243,10 @@
 				A1F1501E2A17B95500DC0649 /* LoginViewController.swift in Sources */,
 				A1BAE7D62A17121100A2B086 /* MainViewController.swift in Sources */,
 				A1BAE7D22A17121100A2B086 /* AppDelegate.swift in Sources */,
-				A1F150262A1BFA0C00DC0649 /* RegisterViewController.swift in Sources */,
+				A1F150262A1BFA0C00DC0649 /* CheckEmailViewController.swift in Sources */,
 				A1BAE7D42A17121100A2B086 /* SceneDelegate.swift in Sources */,
 				A1BAE7EE2A17225D00A2B086 /* NetflixCollectionViewCell.swift in Sources */,
+				A1F1502D2A1C47DA00DC0649 /* RegisterViewController.swift in Sources */,
 				A1BAE7F52A17230100A2B086 /* NetflixInfo.swift in Sources */,
 				A1F150232A1BBFB300DC0649 /* PaddedTextField.swift in Sources */,
 			);

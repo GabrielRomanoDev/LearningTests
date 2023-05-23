@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
-        let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: RegisterViewController.identifier) as? RegisterViewController
+        let vc: CheckEmailViewController? = UIStoryboard(name: CheckEmailViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: CheckEmailViewController.identifier) as? CheckEmailViewController
         present(vc ?? UIViewController(), animated: true)
     }
     

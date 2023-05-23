@@ -113,10 +113,32 @@
                                                     <constraint firstAttribute="height" constant="3" id="esc-9w-Rq0"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-T5-KA1">
+                                                <rect key="frame" x="268" y="15.333333333333316" width="75" height="29.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="6Pg-8U-U2C"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="SHOW">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tappedShowPasswordButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4Ki-nd-FvU"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="2jd-33-rZb"/>
                                             <constraint firstAttribute="trailing" secondItem="2XX-be-fpU" secondAttribute="trailing" constant="5" id="5dH-xI-G1f"/>
+                                            <constraint firstItem="ytJ-T5-KA1" firstAttribute="centerY" secondItem="K4m-H7-Qde" secondAttribute="centerY" id="7z0-Kr-Qs8"/>
                                             <constraint firstItem="eEj-SE-Kae" firstAttribute="top" secondItem="K4m-H7-Qde" secondAttribute="top" id="Fdl-lz-Hp6"/>
                                             <constraint firstAttribute="trailing" secondItem="lb2-10-P08" secondAttribute="trailing" id="Jo6-fq-iwE"/>
                                             <constraint firstAttribute="bottom" secondItem="eEj-SE-Kae" secondAttribute="bottom" id="KeG-Cg-Htw"/>
@@ -125,6 +147,7 @@
                                             <constraint firstAttribute="trailing" secondItem="eEj-SE-Kae" secondAttribute="trailing" id="Nwf-4F-Am6"/>
                                             <constraint firstItem="eEj-SE-Kae" firstAttribute="leading" secondItem="K4m-H7-Qde" secondAttribute="leading" id="RuE-Pf-Guh"/>
                                             <constraint firstItem="lb2-10-P08" firstAttribute="top" secondItem="K4m-H7-Qde" secondAttribute="top" constant="-5" id="VDs-Lq-7sv"/>
+                                            <constraint firstAttribute="trailing" secondItem="ytJ-T5-KA1" secondAttribute="trailing" id="dzr-co-Fc1"/>
                                             <constraint firstItem="2XX-be-fpU" firstAttribute="leading" secondItem="K4m-H7-Qde" secondAttribute="leading" constant="5" id="pLq-Nl-h1w"/>
                                         </constraints>
                                     </view>
@@ -211,6 +234,7 @@
                         <outlet property="passwordPlaceholderLabel" destination="lb2-10-P08" id="3JZ-dl-RCF"/>
                         <outlet property="passwordStackView" destination="2Wk-zf-edd" id="UBO-dj-l4F"/>
                         <outlet property="passwordTextField" destination="eEj-SE-Kae" id="t6h-o3-dI8"/>
+                        <outlet property="showPasswordButton" destination="ytJ-T5-KA1" id="2FZ-xG-VLS"/>
                         <outlet property="signInButton" destination="veJ-Sk-LOg" id="HIo-96-f0H"/>
                         <outlet property="textFieldsDistanceConstraint" destination="LVZ-Kr-4jx" id="olN-S3-soa"/>
                     </connections>

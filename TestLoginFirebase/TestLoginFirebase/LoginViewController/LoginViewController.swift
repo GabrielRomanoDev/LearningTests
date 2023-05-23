@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordPlaceholderLabel: UILabel!
     @IBOutlet weak var passwordPlaceholderHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var passwordErrorIndicatorLine: UIView!
+    @IBOutlet weak var showPasswordButton: UIButton!
     @IBOutlet weak var textFieldsDistanceConstraint: NSLayoutConstraint!
     @IBOutlet weak var signInButton: UIButton!
     
@@ -81,6 +82,18 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func tappedShowPasswordButton(_ sender: UIButton) {
+        passwordTextField.isSecureTextEntry.toggle()
+        
+        switch passwordTextField.isSecureTextEntry {
+        case true:
+            showPasswordButton.setTitle("SHOW", for: .normal)
+        case false:
+            showPasswordButton.setTitle("HIDE", for: .normal)
+        }
+        
+        showPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
+    }
     private func setupButtons() {
         backButton.setTitle("", for: .normal)
         
@@ -104,6 +117,10 @@ class LoginViewController: UIViewController {
         signInButton.layer.borderWidth = 1
         signInButton.layer.cornerRadius = 10
         signInButton.clipsToBounds = true
+        
+        showPasswordButton.isHidden = true
+        showPasswordButton.setTitle("SHOW", for: .normal)
+        showPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
     }
     
     private func SetuptextFields() {
@@ -153,6 +170,12 @@ extension LoginViewController: UITextFieldDelegate {
         } else if textField == passwordTextField {
             passwordErrorLabel.removeFromSuperview()
             passwordErrorIndicatorLine.isHidden = true
+            
+            if passwordTextField.text?.count ?? 0 > 0 {
+                showPasswordButton.isHidden = false
+            } else {
+                showPasswordButton.isHidden = true
+            }
         }
         
         if validateFields() {
@@ -161,6 +184,8 @@ extension LoginViewController: UITextFieldDelegate {
         } else {
             signInButton.backgroundColor = .none
         }
+        
+        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

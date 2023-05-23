@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class CheckEmailViewController: UIViewController {
     
     @IBOutlet weak var emailStackView: UIStackView!
     @IBOutlet weak var emailTextField: PaddedTextField!
@@ -26,9 +26,9 @@ class RegisterViewController: UIViewController {
     }()
     
     var statusEmailError: Bool = false
-    let statusEmail: String = "ok"
+    var statusEmail: String = "ok"
     
-    static let identifier:String = String(describing: RegisterViewController.self)
+    static let identifier:String = String(describing: CheckEmailViewController.self)
     
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
@@ -49,10 +49,11 @@ class RegisterViewController: UIViewController {
         
         view.endEditing(true)
         
-        let statusEmail: String = validateFields()
+        statusEmail = validateFields()
         
         if statusEmail == "ok" {
-            print("sign in")
+            let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: RegisterViewController.identifier) as? RegisterViewController
+            present(vc ?? UIViewController(), animated: true)
         } else {
             statusEmailError = true
             emailStackView.addArrangedSubview(emailErrorLabel)
@@ -92,7 +93,7 @@ class RegisterViewController: UIViewController {
     
 }
 
-extension RegisterViewController: UITextFieldDelegate {
+extension CheckEmailViewController: UITextFieldDelegate {
 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         emailPlaceholderLabel.font = UIFont.systemFont(ofSize: 13)
@@ -108,7 +109,7 @@ extension RegisterViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         
         if statusEmailError {
-            let statusEmail: String = validateFields()
+            statusEmail = validateFields()
             
             if statusEmail == "ok" {
                 emailTextField.layer.borderColor = UIColor.systemGreen.cgColor
