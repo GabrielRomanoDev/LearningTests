@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var optionsButtonImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var firstCellIndicatorView: UIView!
     @IBOutlet weak var secondCellIndicatorView: UIView!
@@ -17,19 +18,27 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupButtonOptionsAppearance()
         setupCollectionView()
         setupPageIndicator()
         updatePageIndicator(cellNumber: 0)
     }
     
     @IBAction func tappedSignInButton(_ sender: UIButton) {
-        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: LoginViewController.identifier) as? LoginViewController
+        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(identifier: LoginViewController.identifier) {coder -> LoginViewController? in
+            return LoginViewController(coder: coder, email: "")
+        }
         present(vc ?? UIViewController(), animated: true)
     }
     
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
         let vc: CheckEmailViewController? = UIStoryboard(name: CheckEmailViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: CheckEmailViewController.identifier) as? CheckEmailViewController
         present(vc ?? UIViewController(), animated: true)
+    }
+    
+    private func setupButtonOptionsAppearance() {
+        optionsButtonImage.image = UIImage(named: "options")?.withRenderingMode(.alwaysTemplate)
+        optionsButtonImage.tintColor = .white
     }
     
     private func setupCollectionView() {

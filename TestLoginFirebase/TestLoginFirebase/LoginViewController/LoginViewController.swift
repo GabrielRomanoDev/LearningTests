@@ -46,6 +46,19 @@ class LoginViewController: UIViewController {
         return label
     }()
     
+    var viewModel: LoginViewModel = LoginViewModel()
+    
+    var email: String
+    
+    required init?(coder: NSCoder, email: String) {
+        self.email = email
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     static let identifier:String = String(describing: LoginViewController.self)
     
     static func nib() -> UINib {
@@ -64,11 +77,13 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func tappedSignInButton(_ sender: UIButton) {
-        
         view.endEditing(true)
         
-        if validateFields() {
-            print("sign in")
+        let email: String = emailTextField.text ?? ""
+        let password: String = passwordTextField.text ?? ""
+        
+        if viewModel.validateFields(email: email, password: password) {
+            viewModel.loginUser(email: email, password: password)
         } else {
             if emailTextField.text?.count ?? 0 < 5 {
                 emailStackView.addArrangedSubview(emailErrorLabel)
@@ -135,13 +150,7 @@ class LoginViewController: UIViewController {
         
     }
     
-    private func validateFields() -> Bool {
-        if emailTextField.text?.count ?? 0 >= 5 && passwordTextField.text?.count ?? 0 >= 4 {
-            return true
-        } else {
-            return false
-        }
-    }
+    
     
 }
 
@@ -178,7 +187,7 @@ extension LoginViewController: UITextFieldDelegate {
             }
         }
         
-        if validateFields() {
+        if viewModel.validateFields(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") {
             signInButton.backgroundColor = .red
             signInButton.clipsToBounds = true
         } else {

@@ -25,6 +25,9 @@
 		A1F150282A1BFA1200DC0649 /* CheckEmailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */; };
 		A1F1502B2A1C47CB00DC0649 /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */; };
 		A1F1502D2A1C47DA00DC0649 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */; };
+		A1F150302A1D286300DC0649 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1502F2A1D286300DC0649 /* RegisterViewModel.swift */; };
+		A1F150332A1D2E4700DC0649 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150322A1D2E4700DC0649 /* LoginViewModel.swift */; };
+		A1F150362A1EEEFA00DC0649 /* CheckEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckEmailViewController.storyboard; sourceTree = "<group>"; };
 		A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 		A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A1F1502F2A1D286300DC0649 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A1F150322A1D2E4700DC0649 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +91,8 @@
 				A1BAE7EB2A17224600A2B086 /* Cell */,
 				A1BAE7EA2A171EFC00A2B086 /* MainViewController */,
 				A1F1501C2A17B91300DC0649 /* LoginViewController */,
-				A1F150242A1BF9EF00DC0649 /* RegisterViewController */,
-				A1F150292A1C47AC00DC0649 /* heckEmailViewController */,
+				A1F150242A1BF9EF00DC0649 /* CheckEmailViewController */,
+				A1F150292A1C47AC00DC0649 /* RegisterViewController */,
 				A1BAE7D12A17121100A2B086 /* AppDelegate.swift */,
 				A1BAE7D32A17121100A2B086 /* SceneDelegate.swift */,
 				A1BAE7DA2A17121200A2B086 /* Assets.xcassets */,
@@ -126,6 +132,7 @@
 		A1F1501C2A17B91300DC0649 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A1F150312A1D2E3500DC0649 /* ViewModel */,
 				A1F1501F2A17B95E00DC0649 /* LoginViewController.storyboard */,
 				A1F1501D2A17B95500DC0649 /* LoginViewController.swift */,
 			);
@@ -140,22 +147,48 @@
 			path = "TextField Class";
 			sourceTree = "<group>";
 		};
-		A1F150242A1BF9EF00DC0649 /* RegisterViewController */ = {
+		A1F150242A1BF9EF00DC0649 /* CheckEmailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A1F150342A1EEEE700DC0649 /* ViewModel */,
 				A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */,
 				A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */,
+			);
+			path = CheckEmailViewController;
+			sourceTree = "<group>";
+		};
+		A1F150292A1C47AC00DC0649 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1502E2A1D284C00DC0649 /* ViewModel */,
+				A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */,
+				A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */,
 			);
 			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
-		A1F150292A1C47AC00DC0649 /* heckEmailViewController */ = {
+		A1F1502E2A1D284C00DC0649 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */,
-				A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */,
+				A1F1502F2A1D286300DC0649 /* RegisterViewModel.swift */,
 			);
-			path = heckEmailViewController;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1F150312A1D2E3500DC0649 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F150322A1D2E4700DC0649 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1F150342A1EEEE700DC0649 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F1501E2A17B95500DC0649 /* LoginViewController.swift in Sources */,
+				A1F150302A1D286300DC0649 /* RegisterViewModel.swift in Sources */,
+				A1F150362A1EEEFA00DC0649 /* CheckEmailViewModel.swift in Sources */,
+				A1F150332A1D2E4700DC0649 /* LoginViewModel.swift in Sources */,
 				A1BAE7D62A17121100A2B086 /* MainViewController.swift in Sources */,
 				A1BAE7D22A17121100A2B086 /* AppDelegate.swift in Sources */,
 				A1F150262A1BFA0C00DC0649 /* CheckEmailViewController.swift in Sources */,

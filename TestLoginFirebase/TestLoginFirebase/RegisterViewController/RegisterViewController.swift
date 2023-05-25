@@ -40,17 +40,29 @@ class RegisterViewController: UIViewController {
         return label
     }()
     
+    var viewModel: RegisterViewModel = RegisterViewModel()
+    
     var statusEmailError: Bool = false
     var statusEmail: String = "ok"
     var statusPasswordError: Bool = false
     var statusPassword: String = "ok"
+    var email: String
     
     static let identifier:String = String(describing: RegisterViewController.self)
     
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-
+    
+    required init?(coder: NSCoder, email: String) {
+        self.email = email
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SetuptextFields()
@@ -58,16 +70,20 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func tappedSignInButton(_ sender: UIButton) {
-        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: LoginViewController.identifier) as? LoginViewController
+        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(identifier: LoginViewController.identifier) {coder -> LoginViewController? in
+            return LoginViewController(coder: coder, email: "")
+        }
         present(vc ?? UIViewController(), animated: true)
     }
     
     @IBAction func tappedContinue(_ sender: UIButton) {
-        
         view.endEditing(true)
         
-        statusEmail = validateEmailTextField()
-        statusPassword = validatePasswordTextField()
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        statusEmail = viewModel.validateEmailTextField(email: email)
+        statusPassword = viewModel.validatePasswordTextField(password: password)
         
         if statusEmail != "ok" {
             statusEmailError = true
@@ -88,8 +104,7 @@ class RegisterViewController: UIViewController {
         
         if statusEmail == "ok" && statusPassword == "ok" {
             
-            //            let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: RegisterViewController.identifier) as? RegisterViewController
-            //            present(vc ?? UIViewController(), animated: true)
+            viewModel.createUser(email: email, password: password)
             print(#function)
         }
         
@@ -101,6 +116,12 @@ class RegisterViewController: UIViewController {
         emailTextField.autocorrectionType = .no
         emailTextField.textContentType = .emailAddress
         emailTextField.layer.cornerRadius = 5
+        emailTextField.text = email
+        
+        if emailTextField.text != "" {
+            emailPlaceholderLabel.font = UIFont.systemFont(ofSize: 13)
+            emailPlaceholderHeightConstraint.constant = 35
+        }
         
         passwordTextField.delegate = self
         passwordTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
@@ -109,37 +130,7 @@ class RegisterViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 5
     }
     
-    private func validateEmailTextField() -> String {
-        let email: String = emailTextField.text ?? ""
-        
-        if email.isEmpty {
-            return "Email is required!"
-        } else if email.count < 5 {
-            return "Email should be between 5 and 50 characters!"
-        } else if !validateEmailFormat(email) {
-            return "Please enter a valid email adress!"
-        } else {
-            return "ok"
-        }
-    }
     
-    private func validatePasswordTextField() -> String {
-        let password: String = passwordTextField.text ?? ""
-        
-        if password.isEmpty {
-            return "Password is required!"
-        } else if password.count < 6 {
-            return "Password should be between 6 and 50 characters!"
-        } else {
-            return "ok"
-        }
-    }
-    
-    private func validateEmailFormat(_ email : String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        return emailPredicate.evaluate(with: email)
-    }
     
 }
 
@@ -171,7 +162,7 @@ extension RegisterViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if textField == emailTextField {
             if statusEmailError {
-                statusEmail = validateEmailTextField()
+                statusEmail = viewModel.validateEmailTextField(email: textField.text ?? "")
                 
                 if statusEmail == "ok" {
                     emailTextField.layer.borderColor = UIColor.systemGreen.cgColor
@@ -183,7 +174,7 @@ extension RegisterViewController: UITextFieldDelegate {
             }
         } else if textField == passwordTextField {
             if statusPasswordError {
-                statusPassword = validatePasswordTextField()
+                statusPassword = viewModel.validatePasswordTextField(password: textField.text ?? "")
                 
                 if statusPassword == "ok" {
                     passwordTextField.layer.borderColor = UIColor.systemGreen.cgColor

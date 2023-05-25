@@ -91,24 +91,24 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAg-ey-xEn">
                                                 <rect key="frame" x="5" y="5" width="20" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="8RU-kL-g8R"/>
-                                                    <constraint firstAttribute="height" constant="20" id="Uts-kh-VpD"/>
-                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pngwing.com-3" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-PZ-h9t">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngwing.com-3" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-PZ-h9t">
                                                 <rect key="frame" x="5" y="5" width="20" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="vAg-ey-xEn" firstAttribute="centerX" secondItem="MW0-D5-NmO" secondAttribute="centerX" id="AY6-JW-mCh"/>
+                                            <constraint firstAttribute="bottom" secondItem="vAg-ey-xEn" secondAttribute="bottom" constant="5" id="L83-eO-4X9"/>
+                                            <constraint firstItem="vAg-ey-xEn" firstAttribute="top" secondItem="MW0-D5-NmO" secondAttribute="top" constant="5" id="Mam-CZ-DDT"/>
+                                            <constraint firstAttribute="trailing" secondItem="vAg-ey-xEn" secondAttribute="trailing" constant="5" id="Smh-4V-Wc7"/>
+                                            <constraint firstItem="gEM-PZ-h9t" firstAttribute="top" secondItem="MW0-D5-NmO" secondAttribute="top" constant="5" id="Vj2-9x-x9x"/>
                                             <constraint firstAttribute="width" constant="30" id="Xwf-HC-NZH"/>
                                             <constraint firstAttribute="height" constant="30" id="aZL-Ja-qSw"/>
-                                            <constraint firstItem="vAg-ey-xEn" firstAttribute="centerY" secondItem="MW0-D5-NmO" secondAttribute="centerY" id="iuN-t2-29E"/>
+                                            <constraint firstAttribute="bottom" secondItem="gEM-PZ-h9t" secondAttribute="bottom" constant="5" id="i1b-uy-pkd"/>
+                                            <constraint firstAttribute="trailing" secondItem="gEM-PZ-h9t" secondAttribute="trailing" constant="5" id="j1p-mY-eQL"/>
+                                            <constraint firstItem="vAg-ey-xEn" firstAttribute="leading" secondItem="MW0-D5-NmO" secondAttribute="leading" constant="5" id="vIM-m6-p87"/>
+                                            <constraint firstItem="gEM-PZ-h9t" firstAttribute="leading" secondItem="MW0-D5-NmO" secondAttribute="leading" constant="5" id="yJy-SY-ODN"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -163,6 +163,7 @@
                         <outlet property="collectionView" destination="RuZ-Sv-DGJ" id="6zR-WV-QYc"/>
                         <outlet property="firstCellIndicatorView" destination="dtn-zX-SsF" id="AkY-dp-o39"/>
                         <outlet property="fourthCellIndicatorView" destination="5Va-v4-2xQ" id="auY-Qz-Uiu"/>
+                        <outlet property="optionsButtonImage" destination="gEM-PZ-h9t" id="6AP-y6-Su9"/>
                         <outlet property="secondCellIndicatorView" destination="pV4-rQ-Ula" id="zKD-1l-LvQ"/>
                         <outlet property="thirdCellIndicatorView" destination="VQx-3M-gVy" id="LSg-7Y-yMI"/>
                     </connections>
@@ -175,9 +176,6 @@
     <resources>
         <image name="Logo" width="4096" height="4096"/>
         <image name="pngwing.com-3" width="512" height="512"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

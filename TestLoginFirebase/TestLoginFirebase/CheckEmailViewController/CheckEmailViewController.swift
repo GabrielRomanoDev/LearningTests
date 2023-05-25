@@ -25,8 +25,10 @@ class CheckEmailViewController: UIViewController {
         return label
     }()
     
+    var viewModel: CheckEmailViewModel = CheckEmailViewModel()
+    
     var statusEmailError: Bool = false
-    var statusEmail: String = "ok"
+    var statusEmail: String = ""
     
     static let identifier:String = String(describing: CheckEmailViewController.self)
     
@@ -46,21 +48,31 @@ class CheckEmailViewController: UIViewController {
     }
     
     @IBAction func tappedGetStarted(_ sender: UIButton) {
-        
         view.endEditing(true)
         
-        statusEmail = validateFields()
+        let email = emailTextField.text ?? ""
         
-        if statusEmail == "ok" {
-            let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: RegisterViewController.identifier) as? RegisterViewController
+        statusEmail = viewModel.validateEmail(email: email)
+        
+        // O código passando direto por aqui, considerar colocar um timer!
+        
+        switch statusEmail {
+        case "ok":
+            let vc: RegisterViewController? = UIStoryboard(name: RegisterViewController.identifier, bundle: nil).instantiateViewController(identifier: RegisterViewController.identifier) {coder -> RegisterViewController? in
+                return RegisterViewController(coder: coder, email: email)
+            }
             present(vc ?? UIViewController(), animated: true)
-        } else {
+        case "Email is already registered!":
+            let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(identifier: LoginViewController.identifier) {coder -> LoginViewController? in
+                return LoginViewController(coder: coder, email: email)
+            }
+            present(vc ?? UIViewController(), animated: true)
+        default:
             statusEmailError = true
             emailStackView.addArrangedSubview(emailErrorLabel)
             emailErrorLabel.text = statusEmail
             emailTextField.layer.borderColor = UIColor.red.cgColor
         }
-        
     }
     
     private func SetuptextFields() {
@@ -70,27 +82,6 @@ class CheckEmailViewController: UIViewController {
         emailTextField.textContentType = .emailAddress
         emailTextField.layer.cornerRadius = 5
     }
-    
-    private func validateFields() -> String {
-        let email: String = emailTextField.text ?? ""
-        
-        if email.isEmpty {
-            return "Email is required!"
-        } else if email.count < 5 {
-            return "Email should be between 5 and 50 characters!"
-        } else if !validateEmailFormat(email) {
-            return "Please enter a valid email adress!"
-        } else {
-            return "ok"
-        }
-    }
-    
-    private func validateEmailFormat(_ email : String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-        return emailPredicate.evaluate(with: email)
-    }
-    
 }
 
 extension CheckEmailViewController: UITextFieldDelegate {
@@ -107,9 +98,8 @@ extension CheckEmailViewController: UITextFieldDelegate {
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        
         if statusEmailError {
-            statusEmail = validateFields()
+            statusEmail = viewModel.validateEmail(email: emailTextField.text ?? "")
             
             if statusEmail == "ok" {
                 emailTextField.layer.borderColor = UIColor.systemGreen.cgColor
