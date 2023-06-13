@@ -104,8 +104,18 @@ class RegisterViewController: UIViewController {
         
         if statusEmail == "ok" && statusPassword == "ok" {
             
-            viewModel.createUser(email: email, password: password)
-            print(#function)
+            viewModel.createUser(email: email, password: password) { resultRegister in
+                if resultRegister == registerStrings.registerSuccessText {
+                    self.showSimpleAlert(title: registerStrings.registerSuccessMessage, message: "") {
+                        let storyboard:UIStoryboard = UIStoryboard(name: MainViewController.identifier, bundle: nil)
+                        if let vc = storyboard.instantiateViewController(withIdentifier:MainViewController.identifier) as? UIViewController {
+                            self.present(vc, animated: true)
+                        }
+                    }
+                } else {
+                    self.showSimpleAlert(title: "Atenção", message: resultRegister)
+                }
+            }
         }
         
     }

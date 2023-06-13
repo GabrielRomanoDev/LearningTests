@@ -8,27 +8,20 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    @IBOutlet weak var optionsButtonImage: UIImageView!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var firstCellIndicatorView: UIView!
     @IBOutlet weak var secondCellIndicatorView: UIView!
     @IBOutlet weak var thirdCellIndicatorView: UIView!
     @IBOutlet weak var fourthCellIndicatorView: UIView!
     
+    static let identifier: String = String(describing: MainViewController.self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButtonOptionsAppearance()
         setupCollectionView()
         setupPageIndicator()
         updatePageIndicator(cellNumber: 0)
-    }
-    
-    @IBAction func tappedSignInButton(_ sender: UIButton) {
-        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(identifier: LoginViewController.identifier) {coder -> LoginViewController? in
-            return LoginViewController(coder: coder, email: "")
-        }
-        present(vc ?? UIViewController(), animated: true)
     }
     
     @IBAction func tappedRegisterButton(_ sender: UIButton) {
@@ -36,9 +29,11 @@ class MainViewController: UIViewController {
         present(vc ?? UIViewController(), animated: true)
     }
     
-    private func setupButtonOptionsAppearance() {
-        optionsButtonImage.image = UIImage(named: "options")?.withRenderingMode(.alwaysTemplate)
-        optionsButtonImage.tintColor = .white
+    @IBAction func tappedSignInButton(_ sender: UIButton) {
+        let vc: LoginViewController? = UIStoryboard(name: LoginViewController.identifier, bundle: nil).instantiateViewController(identifier: LoginViewController.identifier) {coder -> LoginViewController? in
+            return LoginViewController(coder: coder, email: "")
+        }
+        present(vc ?? UIViewController(), animated: true)
     }
     
     private func setupCollectionView() {
@@ -63,25 +58,25 @@ class MainViewController: UIViewController {
     private func updatePageIndicator(cellNumber: Int) {
         switch cellNumber {
         case 0:
-            firstCellIndicatorView.backgroundColor = UIColor.white
+            firstCellIndicatorView.backgroundColor = UIColor.red
             secondCellIndicatorView.backgroundColor = UIColor.gray
             thirdCellIndicatorView.backgroundColor = UIColor.gray
             fourthCellIndicatorView.backgroundColor = UIColor.gray
         case 1:
             firstCellIndicatorView.backgroundColor = UIColor.gray
-            secondCellIndicatorView.backgroundColor = UIColor.white
+            secondCellIndicatorView.backgroundColor = UIColor.red
             thirdCellIndicatorView.backgroundColor = UIColor.gray
             fourthCellIndicatorView.backgroundColor = UIColor.gray
         case 2:
             firstCellIndicatorView.backgroundColor = UIColor.gray
             secondCellIndicatorView.backgroundColor = UIColor.gray
-            thirdCellIndicatorView.backgroundColor = UIColor.white
+            thirdCellIndicatorView.backgroundColor = UIColor.red
             fourthCellIndicatorView.backgroundColor = UIColor.gray
         default:
             firstCellIndicatorView.backgroundColor = UIColor.gray
             secondCellIndicatorView.backgroundColor = UIColor.gray
             thirdCellIndicatorView.backgroundColor = UIColor.gray
-            fourthCellIndicatorView.backgroundColor = UIColor.white
+            fourthCellIndicatorView.backgroundColor = UIColor.red
         }
     }
 }
@@ -103,12 +98,12 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-            let visibleRect = CGRect(origin: collectionView.contentOffset, size: collectionView.bounds.size)
-            let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-            
-            if let indexPath = collectionView.indexPathForItem(at: visiblePoint) {
-                updatePageIndicator(cellNumber: indexPath.row)
-            }
+        let visibleRect = CGRect(origin: collectionView.contentOffset, size: collectionView.bounds.size)
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        
+        if let indexPath = collectionView.indexPathForItem(at: visiblePoint) {
+            updatePageIndicator(cellNumber: indexPath.row)
         }
+    }
     
 }

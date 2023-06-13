@@ -25,16 +25,10 @@ class NetflixCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
-
-    @IBAction func tappedSignInButton(_ sender: UIButton) {
-    }
     
     public func setupCell(netflixInfo: NetflixInfo) {
         titleLabel.text = netflixInfo.title
         subtitleLabel.text = netflixInfo.subTitle
-        
-        
-        
-        
+        backgroundImage.image = UIImage(imageLiteralResourceName: netflixInfo.imageName)
     }
 }

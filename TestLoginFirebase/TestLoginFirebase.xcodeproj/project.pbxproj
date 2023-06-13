@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1A7FA112A37DA9400DB8056 /* loginStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A7FA102A37DA9400DB8056 /* loginStrings.swift */; };
+		A1A7FA142A37DC6100DB8056 /* registerStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A7FA132A37DC6100DB8056 /* registerStrings.swift */; };
+		A1A7FA172A38077E00DB8056 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A7FA162A38077E00DB8056 /* Alert.swift */; };
 		A1BAE7D22A17121100A2B086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BAE7D12A17121100A2B086 /* AppDelegate.swift */; };
 		A1BAE7D42A17121100A2B086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BAE7D32A17121100A2B086 /* SceneDelegate.swift */; };
 		A1BAE7D62A17121100A2B086 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BAE7D52A17121100A2B086 /* MainViewController.swift */; };
@@ -28,9 +31,14 @@
 		A1F150302A1D286300DC0649 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1502F2A1D286300DC0649 /* RegisterViewModel.swift */; };
 		A1F150332A1D2E4700DC0649 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150322A1D2E4700DC0649 /* LoginViewModel.swift */; };
 		A1F150362A1EEEFA00DC0649 /* CheckEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */; };
+		A1FA92EE2A361AFE003D3587 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FA92ED2A361AFE003D3587 /* HomeViewController.storyboard */; };
+		A1FA92F02A361BA7003D3587 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FA92EF2A361BA7003D3587 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1A7FA102A37DA9400DB8056 /* loginStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginStrings.swift; sourceTree = "<group>"; };
+		A1A7FA132A37DC6100DB8056 /* registerStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerStrings.swift; sourceTree = "<group>"; };
+		A1A7FA162A38077E00DB8056 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A1BAE7CE2A17121100A2B086 /* TestLoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BAE7D12A17121100A2B086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1BAE7D32A17121100A2B086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 		A1F1502F2A1D286300DC0649 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		A1F150322A1D2E4700DC0649 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewModel.swift; sourceTree = "<group>"; };
+		A1FA92ED2A361AFE003D3587 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		A1FA92EF2A361BA7003D3587 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1A7FA0F2A37DA7B00DB8056 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7FA102A37DA9400DB8056 /* loginStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A1A7FA122A37DC4D00DB8056 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7FA132A37DC6100DB8056 /* registerStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A1A7FA152A38076300DB8056 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7FA162A38077E00DB8056 /* Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A1A7FA182A382ACD00DB8056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1BAE7D72A17121100A2B086 /* MainViewController.storyboard */,
+				A1BAE7D52A17121100A2B086 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A7FA192A382ADA00DB8056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1501F2A17B95E00DC0649 /* LoginViewController.storyboard */,
+				A1F1501D2A17B95500DC0649 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A7FA1A2A382AE900DB8056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */,
+				A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A7FA1B2A382AFB00DB8056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */,
+				A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A7FA1C2A382B0600DB8056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1FA92ED2A361AFE003D3587 /* HomeViewController.storyboard */,
+				A1FA92EF2A361BA7003D3587 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1BAE7C52A17121100A2B086 = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +165,14 @@
 		A1BAE7D02A17121100A2B086 /* TestLoginFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				A1A7FA152A38076300DB8056 /* Extension */,
 				A1F150212A1BBF9200DC0649 /* TextField Class */,
 				A1BAE7F02A1722C300A2B086 /* Model */,
-				A1BAE7EB2A17224600A2B086 /* Cell */,
 				A1BAE7EA2A171EFC00A2B086 /* MainViewController */,
 				A1F1501C2A17B91300DC0649 /* LoginViewController */,
 				A1F150242A1BF9EF00DC0649 /* CheckEmailViewController */,
 				A1F150292A1C47AC00DC0649 /* RegisterViewController */,
+				A1FA92EA2A361AD2003D3587 /* HomeViewController */,
 				A1BAE7D12A17121100A2B086 /* AppDelegate.swift */,
 				A1BAE7D32A17121100A2B086 /* SceneDelegate.swift */,
 				A1BAE7DA2A17121200A2B086 /* Assets.xcassets */,
@@ -106,8 +186,8 @@
 		A1BAE7EA2A171EFC00A2B086 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A1BAE7D72A17121100A2B086 /* MainViewController.storyboard */,
-				A1BAE7D52A17121100A2B086 /* MainViewController.swift */,
+				A1BAE7EB2A17224600A2B086 /* Cell */,
+				A1A7FA182A382ACD00DB8056 /* View */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -132,9 +212,9 @@
 		A1F1501C2A17B91300DC0649 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A1A7FA0F2A37DA7B00DB8056 /* Strings */,
 				A1F150312A1D2E3500DC0649 /* ViewModel */,
-				A1F1501F2A17B95E00DC0649 /* LoginViewController.storyboard */,
-				A1F1501D2A17B95500DC0649 /* LoginViewController.swift */,
+				A1A7FA192A382ADA00DB8056 /* View */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -151,8 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				A1F150342A1EEEE700DC0649 /* ViewModel */,
-				A1F150272A1BFA1200DC0649 /* CheckEmailViewController.storyboard */,
-				A1F150252A1BFA0C00DC0649 /* CheckEmailViewController.swift */,
+				A1A7FA1A2A382AE900DB8056 /* View */,
 			);
 			path = CheckEmailViewController;
 			sourceTree = "<group>";
@@ -160,9 +239,9 @@
 		A1F150292A1C47AC00DC0649 /* RegisterViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A1A7FA122A37DC4D00DB8056 /* Strings */,
 				A1F1502E2A1D284C00DC0649 /* ViewModel */,
-				A1F1502A2A1C47CB00DC0649 /* RegisterViewController.storyboard */,
-				A1F1502C2A1C47DA00DC0649 /* RegisterViewController.swift */,
+				A1A7FA1B2A382AFB00DB8056 /* View */,
 			);
 			path = RegisterViewController;
 			sourceTree = "<group>";
@@ -189,6 +268,14 @@
 				A1F150352A1EEEFA00DC0649 /* CheckEmailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1FA92EA2A361AD2003D3587 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7FA1C2A382B0600DB8056 /* View */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +347,7 @@
 				A1BAE7DB2A17121200A2B086 /* Assets.xcassets in Resources */,
 				A1F150282A1BFA1200DC0649 /* CheckEmailViewController.storyboard in Resources */,
 				A1F150202A17B95E00DC0649 /* LoginViewController.storyboard in Resources */,
+				A1FA92EE2A361AFE003D3587 /* HomeViewController.storyboard in Resources */,
 				A1BAE7EF2A17225D00A2B086 /* NetflixCollectionViewCell.xib in Resources */,
 				A1BAE7D92A17121100A2B086 /* MainViewController.storyboard in Resources */,
 				A1F1502B2A1C47CB00DC0649 /* RegisterViewController.storyboard in Resources */,
@@ -276,14 +364,18 @@
 				A1F1501E2A17B95500DC0649 /* LoginViewController.swift in Sources */,
 				A1F150302A1D286300DC0649 /* RegisterViewModel.swift in Sources */,
 				A1F150362A1EEEFA00DC0649 /* CheckEmailViewModel.swift in Sources */,
+				A1A7FA142A37DC6100DB8056 /* registerStrings.swift in Sources */,
 				A1F150332A1D2E4700DC0649 /* LoginViewModel.swift in Sources */,
 				A1BAE7D62A17121100A2B086 /* MainViewController.swift in Sources */,
 				A1BAE7D22A17121100A2B086 /* AppDelegate.swift in Sources */,
 				A1F150262A1BFA0C00DC0649 /* CheckEmailViewController.swift in Sources */,
 				A1BAE7D42A17121100A2B086 /* SceneDelegate.swift in Sources */,
+				A1A7FA112A37DA9400DB8056 /* loginStrings.swift in Sources */,
 				A1BAE7EE2A17225D00A2B086 /* NetflixCollectionViewCell.swift in Sources */,
 				A1F1502D2A1C47DA00DC0649 /* RegisterViewController.swift in Sources */,
 				A1BAE7F52A17230100A2B086 /* NetflixInfo.swift in Sources */,
+				A1FA92F02A361BA7003D3587 /* HomeViewController.swift in Sources */,
+				A1A7FA172A38077E00DB8056 /* Alert.swift in Sources */,
 				A1F150232A1BBFB300DC0649 /* PaddedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

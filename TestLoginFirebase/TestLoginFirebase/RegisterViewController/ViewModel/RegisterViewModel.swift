@@ -10,13 +10,27 @@ import Firebase
 
 class RegisterViewModel {
     
-    public func createUser(email: String, password: String) {
+    public func createUser(email: String, password: String, completion: @escaping (String) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if error == nil {
-                print("Sucesso Cadastro!")
+                completion(registerStrings.registerSuccessText)
             } else {
-                print("Falha em realizar cadastro, segue o erro: \(error?.localizedDescription ?? "")")
+                let errorMessage = self.getLocalizedErrorMessage(for: error)
+                completion(registerStrings.failToRegisterErrorMessage + errorMessage)
             }
+        }
+    }
+    
+    private func getLocalizedErrorMessage(for error: Error?) -> String {
+        if let errorCode = (error as NSError?)?.code {
+            switch errorCode {
+            case AuthErrorCode.emailAlreadyInUse.rawValue:
+                return registerStrings.emailAlreadyInUse
+            default:
+                return registerStrings.followError + (error?.localizedDescription ?? "")
+            }
+        } else {
+            return registerStrings.followError + (error?.localizedDescription ?? "")
         }
     }
     

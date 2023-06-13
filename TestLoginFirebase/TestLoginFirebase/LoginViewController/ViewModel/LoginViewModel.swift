@@ -10,13 +10,31 @@ import Firebase
 
 class LoginViewModel {
     
-    public func loginUser(email: String, password: String) {
+    public func loginUser(email: String, password: String, completion: @escaping (String) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if error == nil {
-                print("Sucesso Login")
+                completion(loginStrings.loginSuccessMessage)
             } else {
-                print("Falha em realizar login, segue o erro \(error?.localizedDescription ?? "")")
+                let errorMessage = self.getLocalizedErrorMessage(for: error)
+                completion(errorMessage)
             }
+        }
+    }
+    
+    private func getLocalizedErrorMessage(for error: Error?) -> String {
+        if let errorCode = (error as NSError?)?.code {
+            switch errorCode {
+            case AuthErrorCode.wrongPassword.rawValue:
+                return loginStrings.wrongPasswordError
+            case AuthErrorCode.userNotFound.rawValue:
+                return loginStrings.userNotFoundError
+            case AuthErrorCode.invalidEmail.rawValue:
+                return loginStrings.invalidEmail
+            default:
+                return loginStrings.followError + (error?.localizedDescription ?? "")
+            }
+        } else {
+            return loginStrings.followError + (error?.localizedDescription ?? "")
         }
     }
     

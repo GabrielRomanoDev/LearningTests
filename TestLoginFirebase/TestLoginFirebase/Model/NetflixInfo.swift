@@ -14,8 +14,8 @@ struct NetflixInfo {
 }
 
 var netflixInfos: [NetflixInfo] = [
-    NetflixInfo(title: "Unlimited movies, TV shows & More", subTitle: "Watch anywhere. Cancel anytime.", imageName: "image01"),
-    NetflixInfo(title: "\nNo pesky contracts", subTitle: "Join today, cancel anytime.", imageName: "image02"),
-    NetflixInfo(title: "\nWatch everywhere", subTitle: "Stream on your phone, tablet, laptop, TV and more.", imageName: "image03"),
-    NetflixInfo(title: "\nDownload and watch offline", subTitle: "Only available on ad-free plans.", imageName: "image04")
+    NetflixInfo(title: "Watch on any Device", subTitle: "Stream on your phone, tablet, laptop, and TV without paying more.", imageName: "image00"),
+    NetflixInfo(title: "3, 2, 1... Download!", subTitle: "Downloads only available on ad-free plans.", imageName: "image01"),
+    NetflixInfo(title: "No pesky contracts", subTitle: "Join today, cancel anytime.", imageName: "image02"),
+    NetflixInfo(title: "How do I Watch?", subTitle: "Members that subscribe to Netflix can watch here in the app.", imageName: "image03")
 ]

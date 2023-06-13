@@ -70,7 +70,6 @@ class LoginViewController: UIViewController {
         setupButtons()
         SetuptextFields()
     }
-    
 
     @IBAction func tappedBackButton(_ sender: UIButton) {
         dismiss(animated: true)
@@ -83,7 +82,21 @@ class LoginViewController: UIViewController {
         let password: String = passwordTextField.text ?? ""
         
         if viewModel.validateFields(email: email, password: password) {
-            viewModel.loginUser(email: email, password: password)
+            viewModel.loginUser(email: email, password: password) { resultLogin in
+                if resultLogin == loginStrings.loginSuccessMessage {
+                    let vc: HomeViewController? = UIStoryboard(name: HomeViewController.identifier, bundle: nil).instantiateViewController(withIdentifier: HomeViewController.identifier) as? HomeViewController
+                    self.present(vc ?? UIViewController(), animated: true)
+                } else {
+                    if resultLogin == loginStrings.userNotFoundError {
+                        self.showSimpleAlert(title: loginStrings.tryingSignUpQuestion, message: resultLogin)
+                    } else if resultLogin == loginStrings.wrongPasswordError {
+                        self.showSimpleAlert(title: loginStrings.incorrectPasswordTxt, message: "\(resultLogin) \(email).")
+                    } else {
+                        self.showSimpleAlert(title: "Error", message: "\(loginStrings.failToLoginErrorMessage) \(loginStrings.followError) \(resultLogin)")
+                    }
+                    
+                }
+            }
         } else {
             if emailTextField.text?.count ?? 0 < 5 {
                 emailStackView.addArrangedSubview(emailErrorLabel)
@@ -106,8 +119,6 @@ class LoginViewController: UIViewController {
         case false:
             showPasswordButton.setTitle("HIDE", for: .normal)
         }
-        
-        showPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
     }
     private func setupButtons() {
         backButton.setTitle("", for: .normal)
@@ -128,14 +139,12 @@ class LoginViewController: UIViewController {
         backButton.setImage(finalImage, for: .normal)
         backButton.tintColor = .white
         
-        signInButton.layer.borderColor = UIColor.white.cgColor
+        signInButton.layer.borderColor = UIColor.black.cgColor
         signInButton.layer.borderWidth = 1
         signInButton.layer.cornerRadius = 10
         signInButton.clipsToBounds = true
         
-        showPasswordButton.isHidden = true
         showPasswordButton.setTitle("SHOW", for: .normal)
-        showPasswordButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
     }
     
     private func SetuptextFields() {
@@ -164,12 +173,7 @@ extension LoginViewController: UITextFieldDelegate {
             passwordPlaceholderLabel.font = UIFont.systemFont(ofSize: 13)
             passwordPlaceholderHeightConstraint.constant = 35
         }
-        
         return true
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textFieldsDistanceConstraint.constant = 20
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
@@ -179,12 +183,6 @@ extension LoginViewController: UITextFieldDelegate {
         } else if textField == passwordTextField {
             passwordErrorLabel.removeFromSuperview()
             passwordErrorIndicatorLine.isHidden = true
-            
-            if passwordTextField.text?.count ?? 0 > 0 {
-                showPasswordButton.isHidden = false
-            } else {
-                showPasswordButton.isHidden = true
-            }
         }
         
         if viewModel.validateFields(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") {
@@ -193,14 +191,10 @@ extension LoginViewController: UITextFieldDelegate {
         } else {
             signInButton.backgroundColor = .none
         }
-        
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
-            textFieldsDistanceConstraint.constant = 140
-            
             if textField == emailTextField {
                 emailPlaceholderLabel.font = UIFont.systemFont(ofSize: 17)
                 emailPlaceholderHeightConstraint.constant = 70

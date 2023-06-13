@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "59D4F8EB-15EB-48DC-9131-EA7DA185481B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3E6CB91-68B3-4C0A-A095-0D2F026E8BF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "checkState()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "B3E6CB91-68B3-4C0A-A095-0D2F026E8BF0 - 8f41678409bb8915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "B3E6CB91-68B3-4C0A-A095-0D2F026E8BF0 - 8f41678409bb8915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "B3E6CB91-68B3-4C0A-A095-0D2F026E8BF0 - 8f41678409bb895b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "B3E6CB91-68B3-4C0A-A095-0D2F026E8BF0 - 8f41678409bb8f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "checkState()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D - 8f41678409bb8915"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D - 8f41678409bb8db9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D - 8f41678409bb8dff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D - 8f41678409bb8f8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "1C4B3884-18DD-4B5C-B771-59836A6F393D - 8f41678409bb8ce0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05BBC568-1541-4F80-ADB6-CE9A13C04CA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "05BBC568-1541-4F80-ADB6-CE9A13C04CA3 - 19d742a6dd36f45f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.scanState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "05BBC568-1541-4F80-ADB6-CE9A13C04CA3 - 19d742a6dd36e967"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.scanState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88E1C14C-F5BE-442A-8AE9-5EF416C651D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "88E1C14C-F5BE-442A-8AE9-5EF416C651D2 - 71788a552e55894d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "88E1C14C-F5BE-442A-8AE9-5EF416C651D2 - 71788a552e5589ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "336">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3508EE78-35E1-439A-955C-EE50DDF81515"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "3508EE78-35E1-439A-955C-EE50DDF81515 - 19d742a6dd36eb28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.scanState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "3508EE78-35E1-439A-955C-EE50DDF81515 - 19d742a6dd36e958"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.scanState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE - efd9426a44b26194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE - 71788a552e55881b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE - efd9426a44b26194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE - efd9426a44b261b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "B59F91AD-F1EE-4625-B190-F23C71A953AE - 71788a552e558874"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "962D3C46-5186-49BA-A149-1F8629DDE963"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "962D3C46-5186-49BA-A149-1F8629DDE963 - 71788a552e558855"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "962D3C46-5186-49BA-A149-1F8629DDE963 - 71788a552e5588b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41 - efd9426a44b27fca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41 - 2c22d5a1417136a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in TesteInfoPlist"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41 - efd9426a44b27fca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41 - efd9426a44b27d59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  uuid = "AB67C653-B6CF-4528-B1C8-4F52EB89AB41 - efd9426a44b27d59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "936">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "checkStateInOneSecond()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - e6bf05fd139d3358"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - e6bf05fd139d3250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - 91e97729f76c1ea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - e6bf05fd139d32ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - 91e97729f76c1eea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - 6c463fbc57ddbd72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - 5ea878c602c23dc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - 6c463fbc57ddbd72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "A9C2438E-A977-4BA4-9AA3-450E9B549465 - e6bf05fd139d32cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B480F052-5553-43D8-8C93-FCA927CEAC4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "checkState()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86314E9A-9E84-4065-93AD-D2893320E015"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "checkStateInOneSecond()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - e6bf05fd139d3250"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - 91e97729f76c1e77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - 91e97729f76c1ea8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - 91e97729f76c1eea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - 5ea878c602c23dc7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - e6bf05fd139d32cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "86314E9A-9E84-4065-93AD-D2893320E015 - 6c463fbc57ddbded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkStateInOneSecond() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E500BF54-A060-43A4-A198-411F56D259D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A67C513-0EF2-47A3-8714-24CD70822199"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "469EA4D8-5F41-4AB9-BA52-F0B8B808F706"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A41A367-B7DE-4127-A605-D6680E9ED574"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A45A8E9-7594-499C-A2CE-A6886BC01E89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E406C2FC-CE25-4E96-A456-6E16D18C747A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "095E73A8-1325-4587-A8A7-B4CDA18B81A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "checkState()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "095E73A8-1325-4587-A8A7-B4CDA18B81A2 - 8f41678409bb8fe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "095E73A8-1325-4587-A8A7-B4CDA18B81A2 - 8f41678409bb8e2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TesteInfoPlist.checkState() -&gt; ()"
+                  moduleName = "TesteInfoPlist"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/TesteInfoPlist/TesteInfoPlist/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "660">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5AB5D14-503A-4ABF-93D4-A143EA3F553E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B1270B6-93B9-453E-957D-818435715D48"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TesteInfoPlist/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "scanState()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
