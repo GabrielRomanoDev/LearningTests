@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButtons()
-        SetuptextFields()
+        setupTextFields()
     }
 
     @IBAction func tappedBackButton(_ sender: UIButton) {
@@ -147,10 +147,10 @@ class LoginViewController: UIViewController {
         showPasswordButton.setTitle("SHOW", for: .normal)
     }
     
-    private func SetuptextFields() {
+    private func setupTextFields() {
         emailTextField.delegate = self
         emailTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
-        emailTextField.textContentType = .emailAddress
+        emailTextField.keyboardType = .emailAddress
         emailTextField.autocorrectionType = .no
         
         passwordTextField.delegate = self

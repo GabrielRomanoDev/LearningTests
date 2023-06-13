@@ -124,7 +124,7 @@ class RegisterViewController: UIViewController {
         emailTextField.delegate = self
         emailTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
         emailTextField.autocorrectionType = .no
-        emailTextField.textContentType = .emailAddress
+        emailTextField.keyboardType = .emailAddress
         emailTextField.layer.cornerRadius = 5
         emailTextField.text = email
         
@@ -136,7 +136,6 @@ class RegisterViewController: UIViewController {
         passwordTextField.delegate = self
         passwordTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
         passwordTextField.autocorrectionType = .no
-        passwordTextField.textContentType = .emailAddress
         passwordTextField.layer.cornerRadius = 5
     }
     

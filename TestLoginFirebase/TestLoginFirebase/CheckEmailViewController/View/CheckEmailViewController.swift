@@ -79,7 +79,7 @@ class CheckEmailViewController: UIViewController {
         emailTextField.delegate = self
         emailTextField.textInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
         emailTextField.autocorrectionType = .no
-        emailTextField.textContentType = .emailAddress
+        emailTextField.keyboardType = .emailAddress
         emailTextField.layer.cornerRadius = 5
     }
 }
