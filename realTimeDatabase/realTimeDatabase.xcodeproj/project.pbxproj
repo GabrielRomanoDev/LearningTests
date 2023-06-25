@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1F96CF32A48CEB2006398F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96CF22A48CEB2006398F2 /* AppDelegate.swift */; };
+		A1F96CF52A48CEB2006398F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96CF42A48CEB2006398F2 /* SceneDelegate.swift */; };
+		A1F96CF72A48CEB2006398F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96CF62A48CEB2006398F2 /* MainViewController.swift */; };
+		A1F96CFA2A48CEB2006398F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F96CF82A48CEB2006398F2 /* Main.storyboard */; };
+		A1F96CFC2A48CEB3006398F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F96CFB2A48CEB3006398F2 /* Assets.xcassets */; };
+		A1F96CFF2A48CEB3006398F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F96CFD2A48CEB3006398F2 /* LaunchScreen.storyboard */; };
+		A1F96D192A48D051006398F2 /* BankAccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D0B2A48D051006398F2 /* BankAccountsViewModel.swift */; };
+		A1F96D1A2A48D051006398F2 /* AccountCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D0E2A48D051006398F2 /* AccountCollectionViewCell.xib */; };
+		A1F96D1B2A48D051006398F2 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D0F2A48D051006398F2 /* AccountCollectionViewCell.swift */; };
+		A1F96D1C2A48D051006398F2 /* BankAccountsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D112A48D051006398F2 /* BankAccountsViewController.storyboard */; };
+		A1F96D1D2A48D051006398F2 /* BankAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D122A48D051006398F2 /* BankAccountsViewController.swift */; };
+		A1F96D1E2A48D051006398F2 /* EditBankAccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D152A48D051006398F2 /* EditBankAccountsViewModel.swift */; };
+		A1F96D1F2A48D051006398F2 /* EditBankAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D172A48D051006398F2 /* EditBankAccountsViewController.swift */; };
+		A1F96D202A48D051006398F2 /* EditBankAccountsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D182A48D051006398F2 /* EditBankAccountsViewController.storyboard */; };
+		A1F96D232A48D1A3006398F2 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D222A48D1A3006398F2 /* BankAccount.swift */; };
+		A1F96D262A48D1BC006398F2 /* Banks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D252A48D1BC006398F2 /* Banks.swift */; };
+		A1F96D282A48D1E4006398F2 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D272A48D1E4006398F2 /* Transactions.swift */; };
+		A1F96D2B2A48D235006398F2 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D2A2A48D235006398F2 /* Formatters.swift */; };
+		A1F96D2E2A48D284006398F2 /* globalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D2D2A48D284006398F2 /* globalStrings.swift */; };
+		A1F96D302A48D29D006398F2 /* moreOptionsStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D2F2A48D29D006398F2 /* moreOptionsStrings.swift */; };
+		A1F96D322A48D2DB006398F2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D312A48D2DB006398F2 /* UIColor.swift */; };
+		A1F96D362A48D34F006398F2 /* NewItemButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D342A48D34E006398F2 /* NewItemButtonCell.swift */; };
+		A1F96D372A48D34F006398F2 /* NewItemButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D352A48D34E006398F2 /* NewItemButtonCell.xib */; };
+		A1F96D392A48D381006398F2 /* ConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D382A48D381006398F2 /* ConfigType.swift */; };
+		A1F96D422A48D3D3006398F2 /* InsertNumbersModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D3C2A48D3D3006398F2 /* InsertNumbersModalViewModel.swift */; };
+		A1F96D432A48D3D3006398F2 /* insertNumberStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D3E2A48D3D3006398F2 /* insertNumberStrings.swift */; };
+		A1F96D442A48D3D3006398F2 /* InsertNumbersModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D402A48D3D3006398F2 /* InsertNumbersModalViewController.swift */; };
+		A1F96D452A48D3D3006398F2 /* InsertNumbersModalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D412A48D3D3006398F2 /* InsertNumbersModalViewController.storyboard */; };
+		A1F96D4A2A48D4A2006398F2 /* BanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D482A48D4A2006398F2 /* BanksCell.swift */; };
+		A1F96D4B2A48D4A2006398F2 /* BanksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D492A48D4A2006398F2 /* BanksCell.xib */; };
+		A1F96D4D2A48D4C8006398F2 /* BankProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D4C2A48D4C8006398F2 /* BankProperties.swift */; };
+		A1F96D4F2A48D52D006398F2 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */; };
+		A1F96D512A48D54A006398F2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D502A48D54A006398F2 /* Alert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1F96CEF2A48CEB2006398F2 /* realTimeDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realTimeDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F96CF22A48CEB2006398F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1F96CF42A48CEB2006398F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1F96CF62A48CEB2006398F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1F96CF92A48CEB2006398F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1F96CFB2A48CEB3006398F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1F96CFE2A48CEB3006398F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1F96D002A48CEB3006398F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F96D0B2A48D051006398F2 /* BankAccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccountsViewModel.swift; sourceTree = "<group>"; };
+		A1F96D0E2A48D051006398F2 /* AccountCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1F96D0F2A48D051006398F2 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1F96D112A48D051006398F2 /* BankAccountsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BankAccountsViewController.storyboard; sourceTree = "<group>"; };
+		A1F96D122A48D051006398F2 /* BankAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccountsViewController.swift; sourceTree = "<group>"; };
+		A1F96D152A48D051006398F2 /* EditBankAccountsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBankAccountsViewModel.swift; sourceTree = "<group>"; };
+		A1F96D172A48D051006398F2 /* EditBankAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBankAccountsViewController.swift; sourceTree = "<group>"; };
+		A1F96D182A48D051006398F2 /* EditBankAccountsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditBankAccountsViewController.storyboard; sourceTree = "<group>"; };
+		A1F96D222A48D1A3006398F2 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		A1F96D252A48D1BC006398F2 /* Banks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banks.swift; sourceTree = "<group>"; };
+		A1F96D272A48D1E4006398F2 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		A1F96D2A2A48D235006398F2 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		A1F96D2D2A48D284006398F2 /* globalStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalStrings.swift; sourceTree = "<group>"; };
+		A1F96D2F2A48D29D006398F2 /* moreOptionsStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreOptionsStrings.swift; sourceTree = "<group>"; };
+		A1F96D312A48D2DB006398F2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A1F96D342A48D34E006398F2 /* NewItemButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemButtonCell.swift; sourceTree = "<group>"; };
+		A1F96D352A48D34E006398F2 /* NewItemButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewItemButtonCell.xib; sourceTree = "<group>"; };
+		A1F96D382A48D381006398F2 /* ConfigType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigType.swift; sourceTree = "<group>"; };
+		A1F96D3C2A48D3D3006398F2 /* InsertNumbersModalViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNumbersModalViewModel.swift; sourceTree = "<group>"; };
+		A1F96D3E2A48D3D3006398F2 /* insertNumberStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = insertNumberStrings.swift; sourceTree = "<group>"; };
+		A1F96D402A48D3D3006398F2 /* InsertNumbersModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertNumbersModalViewController.swift; sourceTree = "<group>"; };
+		A1F96D412A48D3D3006398F2 /* InsertNumbersModalViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InsertNumbersModalViewController.storyboard; sourceTree = "<group>"; };
+		A1F96D482A48D4A2006398F2 /* BanksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCell.swift; sourceTree = "<group>"; };
+		A1F96D492A48D4A2006398F2 /* BanksCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BanksCell.xib; sourceTree = "<group>"; };
+		A1F96D4C2A48D4C8006398F2 /* BankProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankProperties.swift; sourceTree = "<group>"; };
+		A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
+		A1F96D502A48D54A006398F2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1F96CEC2A48CEB2006398F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1F96CE62A48CEB2006398F2 = {
+			isa = PBXGroup;
+			children = (
+				A1F96CF12A48CEB2006398F2 /* realTimeDatabase */,
+				A1F96CF02A48CEB2006398F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1F96CF02A48CEB2006398F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96CEF2A48CEB2006398F2 /* realTimeDatabase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1F96CF12A48CEB2006398F2 /* realTimeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D292A48D223006398F2 /* Extensions */,
+				A1F96D212A48D17E006398F2 /* Models */,
+				A1F96D2C2A48D270006398F2 /* Strings */,
+				A1F96D062A48CED7006398F2 /* Screens */,
+				A1F96CF22A48CEB2006398F2 /* AppDelegate.swift */,
+				A1F96CF42A48CEB2006398F2 /* SceneDelegate.swift */,
+				A1F96CFB2A48CEB3006398F2 /* Assets.xcassets */,
+				A1F96CFD2A48CEB3006398F2 /* LaunchScreen.storyboard */,
+				A1F96D002A48CEB3006398F2 /* Info.plist */,
+			);
+			path = realTimeDatabase;
+			sourceTree = "<group>";
+		};
+		A1F96D062A48CED7006398F2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D3A2A48D3D3006398F2 /* InsertNumbersModalViewController */,
+				A1F96D072A48CF10006398F2 /* Main */,
+				A1F96D092A48D051006398F2 /* BankAccountsViewController */,
+				A1F96D132A48D051006398F2 /* EditBankAccountsViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A1F96D072A48CF10006398F2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96CF62A48CEB2006398F2 /* MainViewController.swift */,
+				A1F96CF82A48CEB2006398F2 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A1F96D092A48D051006398F2 /* BankAccountsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D0A2A48D051006398F2 /* ViewModel */,
+				A1F96D0C2A48D051006398F2 /* Cells */,
+				A1F96D102A48D051006398F2 /* View */,
+			);
+			path = BankAccountsViewController;
+			sourceTree = "<group>";
+		};
+		A1F96D0A2A48D051006398F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D0B2A48D051006398F2 /* BankAccountsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1F96D0C2A48D051006398F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D332A48D34E006398F2 /* NewItemButtonCell */,
+				A1F96D0D2A48D051006398F2 /* AccountCollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A1F96D0D2A48D051006398F2 /* AccountCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D0E2A48D051006398F2 /* AccountCollectionViewCell.xib */,
+				A1F96D0F2A48D051006398F2 /* AccountCollectionViewCell.swift */,
+			);
+			path = AccountCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A1F96D102A48D051006398F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D112A48D051006398F2 /* BankAccountsViewController.storyboard */,
+				A1F96D122A48D051006398F2 /* BankAccountsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1F96D132A48D051006398F2 /* EditBankAccountsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D462A48D48D006398F2 /* Cells */,
+				A1F96D142A48D051006398F2 /* ViewModel */,
+				A1F96D162A48D051006398F2 /* View */,
+			);
+			path = EditBankAccountsViewController;
+			sourceTree = "<group>";
+		};
+		A1F96D142A48D051006398F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D152A48D051006398F2 /* EditBankAccountsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1F96D162A48D051006398F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D172A48D051006398F2 /* EditBankAccountsViewController.swift */,
+				A1F96D182A48D051006398F2 /* EditBankAccountsViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1F96D212A48D17E006398F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D242A48D1B1006398F2 /* Enums */,
+				A1F96D222A48D1A3006398F2 /* BankAccount.swift */,
+				A1F96D272A48D1E4006398F2 /* Transactions.swift */,
+				A1F96D4C2A48D4C8006398F2 /* BankProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1F96D242A48D1B1006398F2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D252A48D1BC006398F2 /* Banks.swift */,
+				A1F96D382A48D381006398F2 /* ConfigType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A1F96D292A48D223006398F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D2A2A48D235006398F2 /* Formatters.swift */,
+				A1F96D312A48D2DB006398F2 /* UIColor.swift */,
+				A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */,
+				A1F96D502A48D54A006398F2 /* Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1F96D2C2A48D270006398F2 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D2D2A48D284006398F2 /* globalStrings.swift */,
+				A1F96D2F2A48D29D006398F2 /* moreOptionsStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A1F96D332A48D34E006398F2 /* NewItemButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D342A48D34E006398F2 /* NewItemButtonCell.swift */,
+				A1F96D352A48D34E006398F2 /* NewItemButtonCell.xib */,
+			);
+			path = NewItemButtonCell;
+			sourceTree = "<group>";
+		};
+		A1F96D3A2A48D3D3006398F2 /* InsertNumbersModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D3B2A48D3D3006398F2 /* ViewModel */,
+				A1F96D3D2A48D3D3006398F2 /* Strings */,
+				A1F96D3F2A48D3D3006398F2 /* View */,
+			);
+			path = InsertNumbersModalViewController;
+			sourceTree = "<group>";
+		};
+		A1F96D3B2A48D3D3006398F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D3C2A48D3D3006398F2 /* InsertNumbersModalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A1F96D3D2A48D3D3006398F2 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D3E2A48D3D3006398F2 /* insertNumberStrings.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		A1F96D3F2A48D3D3006398F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D402A48D3D3006398F2 /* InsertNumbersModalViewController.swift */,
+				A1F96D412A48D3D3006398F2 /* InsertNumbersModalViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1F96D462A48D48D006398F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D472A48D4A2006398F2 /* BanksCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A1F96D472A48D4A2006398F2 /* BanksCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1F96D482A48D4A2006398F2 /* BanksCell.swift */,
+				A1F96D492A48D4A2006398F2 /* BanksCell.xib */,
+			);
+			path = BanksCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1F96CEE2A48CEB2006398F2 /* realTimeDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F96D032A48CEB3006398F2 /* Build configuration list for PBXNativeTarget "realTimeDatabase" */;
+			buildPhases = (
+				A1F96CEB2A48CEB2006398F2 /* Sources */,
+				A1F96CEC2A48CEB2006398F2 /* Frameworks */,
+				A1F96CED2A48CEB2006398F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = realTimeDatabase;
+			productName = realTimeDatabase;
+			productReference = A1F96CEF2A48CEB2006398F2 /* realTimeDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1F96CE72A48CEB2006398F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A1F96CEE2A48CEB2006398F2 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A1F96CEA2A48CEB2006398F2 /* Build configuration list for PBXProject "realTimeDatabase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1F96CE62A48CEB2006398F2;
+			productRefGroup = A1F96CF02A48CEB2006398F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1F96CEE2A48CEB2006398F2 /* realTimeDatabase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1F96CED2A48CEB2006398F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F96CFF2A48CEB3006398F2 /* LaunchScreen.storyboard in Resources */,
+				A1F96D202A48D051006398F2 /* EditBankAccountsViewController.storyboard in Resources */,
+				A1F96CFC2A48CEB3006398F2 /* Assets.xcassets in Resources */,
+				A1F96D4B2A48D4A2006398F2 /* BanksCell.xib in Resources */,
+				A1F96D1A2A48D051006398F2 /* AccountCollectionViewCell.xib in Resources */,
+				A1F96CFA2A48CEB2006398F2 /* Main.storyboard in Resources */,
+				A1F96D372A48D34F006398F2 /* NewItemButtonCell.xib in Resources */,
+				A1F96D1C2A48D051006398F2 /* BankAccountsViewController.storyboard in Resources */,
+				A1F96D452A48D3D3006398F2 /* InsertNumbersModalViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1F96CEB2A48CEB2006398F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F96D1F2A48D051006398F2 /* EditBankAccountsViewController.swift in Sources */,
+				A1F96CF72A48CEB2006398F2 /* MainViewController.swift in Sources */,
+				A1F96D4D2A48D4C8006398F2 /* BankProperties.swift in Sources */,
+				A1F96D1E2A48D051006398F2 /* EditBankAccountsViewModel.swift in Sources */,
+				A1F96CF32A48CEB2006398F2 /* AppDelegate.swift in Sources */,
+				A1F96D322A48D2DB006398F2 /* UIColor.swift in Sources */,
+				A1F96D512A48D54A006398F2 /* Alert.swift in Sources */,
+				A1F96D392A48D381006398F2 /* ConfigType.swift in Sources */,
+				A1F96D442A48D3D3006398F2 /* InsertNumbersModalViewController.swift in Sources */,
+				A1F96D232A48D1A3006398F2 /* BankAccount.swift in Sources */,
+				A1F96D282A48D1E4006398F2 /* Transactions.swift in Sources */,
+				A1F96D4F2A48D52D006398F2 /* OptionalExtension.swift in Sources */,
+				A1F96D362A48D34F006398F2 /* NewItemButtonCell.swift in Sources */,
+				A1F96D302A48D29D006398F2 /* moreOptionsStrings.swift in Sources */,
+				A1F96D2B2A48D235006398F2 /* Formatters.swift in Sources */,
+				A1F96D192A48D051006398F2 /* BankAccountsViewModel.swift in Sources */,
+				A1F96D432A48D3D3006398F2 /* insertNumberStrings.swift in Sources */,
+				A1F96D1B2A48D051006398F2 /* AccountCollectionViewCell.swift in Sources */,
+				A1F96D262A48D1BC006398F2 /* Banks.swift in Sources */,
+				A1F96D2E2A48D284006398F2 /* globalStrings.swift in Sources */,
+				A1F96D1D2A48D051006398F2 /* BankAccountsViewController.swift in Sources */,
+				A1F96D4A2A48D4A2006398F2 /* BanksCell.swift in Sources */,
+				A1F96D422A48D3D3006398F2 /* InsertNumbersModalViewModel.swift in Sources */,
+				A1F96CF52A48CEB2006398F2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1F96CF82A48CEB2006398F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F96CF92A48CEB2006398F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1F96CFD2A48CEB3006398F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F96CFE2A48CEB3006398F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1F96D012A48CEB3006398F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1F96D022A48CEB3006398F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1F96D042A48CEB3006398F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FP42UUG2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = realTimeDatabase/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GabrielRomanoLearning.realTimeDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F96D052A48CEB3006398F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FP42UUG2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = realTimeDatabase/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GabrielRomanoLearning.realTimeDatabase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1F96CEA2A48CEB2006398F2 /* Build configuration list for PBXProject "realTimeDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F96D012A48CEB3006398F2 /* Debug */,
+				A1F96D022A48CEB3006398F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F96D032A48CEB3006398F2 /* Build configuration list for PBXNativeTarget "realTimeDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F96D042A48CEB3006398F2 /* Debug */,
+				A1F96D052A48CEB3006398F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1F96CE72A48CEB2006398F2 /* Project object */;
+}
