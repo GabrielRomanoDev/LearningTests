@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		A1E64BB42A4C7E4C00B71127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BB32A4C7E4C00B71127 /* AppDelegate.swift */; };
 		A1E64BB62A4C7E4C00B71127 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BB52A4C7E4C00B71127 /* SceneDelegate.swift */; };
-		A1E64BB82A4C7E4C00B71127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BB72A4C7E4C00B71127 /* ViewController.swift */; };
 		A1E64BBB2A4C7E4C00B71127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E64BB92A4C7E4C00B71127 /* Main.storyboard */; };
 		A1E64BBD2A4C7E4E00B71127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E64BBC2A4C7E4E00B71127 /* Assets.xcassets */; };
 		A1E64BC02A4C7E4E00B71127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E64BBE2A4C7E4E00B71127 /* LaunchScreen.storyboard */; };
+		A1E64BC92A4C803A00B71127 /* Tela01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BC82A4C803A00B71127 /* Tela01ViewController.swift */; };
+		A1E64BCC2A4C807500B71127 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BCB2A4C807500B71127 /* Person.swift */; };
+		A1E64BD02A4C809800B71127 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E64BCE2A4C809800B71127 /* CustomTableViewCell.xib */; };
+		A1E64BD12A4C809800B71127 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E64BCF2A4C809800B71127 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1E64BB02A4C7E4C00B71127 /* firestoreFirebase_Teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firestoreFirebase_Teste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E64BB32A4C7E4C00B71127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E64BB52A4C7E4C00B71127 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1E64BB72A4C7E4C00B71127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1E64BBA2A4C7E4C00B71127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1E64BBC2A4C7E4E00B71127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1E64BBF2A4C7E4E00B71127 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E64BC12A4C7E4E00B71127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E64BC82A4C803A00B71127 /* Tela01ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tela01ViewController.swift; sourceTree = "<group>"; };
+		A1E64BCB2A4C807500B71127 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A1E64BCE2A4C809800B71127 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		A1E64BCF2A4C809800B71127 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		A1E64BB22A4C7E4C00B71127 /* firestoreFirebase_Teste */ = {
 			isa = PBXGroup;
 			children = (
+				A1E64BCD2A4C809800B71127 /* Cell */,
+				A1E64BCA2A4C807500B71127 /* Model */,
+				A1E64BC82A4C803A00B71127 /* Tela01ViewController.swift */,
 				A1E64BB32A4C7E4C00B71127 /* AppDelegate.swift */,
 				A1E64BB52A4C7E4C00B71127 /* SceneDelegate.swift */,
-				A1E64BB72A4C7E4C00B71127 /* ViewController.swift */,
 				A1E64BB92A4C7E4C00B71127 /* Main.storyboard */,
 				A1E64BBC2A4C7E4E00B71127 /* Assets.xcassets */,
 				A1E64BBE2A4C7E4E00B71127 /* LaunchScreen.storyboard */,
 				A1E64BC12A4C7E4E00B71127 /* Info.plist */,
 			);
 			path = firestoreFirebase_Teste;
+			sourceTree = "<group>";
+		};
+		A1E64BCA2A4C807500B71127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1E64BCB2A4C807500B71127 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1E64BCD2A4C809800B71127 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A1E64BCE2A4C809800B71127 /* CustomTableViewCell.xib */,
+				A1E64BCF2A4C809800B71127 /* CustomTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +152,7 @@
 			files = (
 				A1E64BC02A4C7E4E00B71127 /* LaunchScreen.storyboard in Resources */,
 				A1E64BBD2A4C7E4E00B71127 /* Assets.xcassets in Resources */,
+				A1E64BD02A4C809800B71127 /* CustomTableViewCell.xib in Resources */,
 				A1E64BBB2A4C7E4C00B71127 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E64BB82A4C7E4C00B71127 /* ViewController.swift in Sources */,
+				A1E64BD12A4C809800B71127 /* CustomTableViewCell.swift in Sources */,
+				A1E64BCC2A4C807500B71127 /* Person.swift in Sources */,
 				A1E64BB42A4C7E4C00B71127 /* AppDelegate.swift in Sources */,
 				A1E64BB62A4C7E4C00B71127 /* SceneDelegate.swift in Sources */,
+				A1E64BC92A4C803A00B71127 /* Tela01ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
