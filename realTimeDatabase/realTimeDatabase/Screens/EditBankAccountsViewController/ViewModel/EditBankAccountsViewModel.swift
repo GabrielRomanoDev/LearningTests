@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
+import FirebaseDatabaseSwift
 
 class EditBankAccountsViewModel{
     
@@ -99,5 +101,42 @@ class EditBankAccountsViewModel{
         return bankProperties[bank]?.backgroundColor ??  UIColor.systemBlue
     }
     
+    private let ref = Database.database().reference()
+    
+    public func saveValueIntoDatabase(value: String) {
+        //ref.childByAutoId().setValue(value)
+        ref.child("Teste").setValue(value)
+    }
+    
+    public func saveObjectIntoDatabase() {
+        //ref.childByAutoId().setValue(value)
+        ref.child("bankAccountsList0").setValue(bankAccountsList[0].toDictionary)
+    }
+    
+    public func saveArrayIntoDatabase() {
+        var array = Array<Any>()
+        
+        for i in 0..<bankAccountsList.count {
+            array.append(bankAccountsList[i].toDictionary)
+        }
+        
+        ref.child("bankAccountsList").setValue(array)
+    }
+    
+    public func readValue(completion: @escaping (String) -> Void) {
+        var value: String? = nil
+        ref.child("Teste").observeSingleEvent(of: .value) { snapshot in
+            value = snapshot.value as? String
+            completion(value ?? "")
+        }
+    }
+    
+    public func readObject(completion: @escaping (BankAccount) -> Void) {
+        var value: BankAccount? = nil
+        ref.child("bankAccountsList0").observeSingleEvent(of: .value) { snapshot, _ in
+            value = snapshot.value as? BankAccount
+            completion(value!)
+        }
+    }
     
 }

@@ -41,6 +41,9 @@
 		A1F96D4F2A48D52D006398F2 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */; };
 		A1F96D512A48D54A006398F2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D502A48D54A006398F2 /* Alert.swift */; };
 		A1F96D532A48E4AF006398F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1F96D522A48E4AF006398F2 /* GoogleService-Info.plist */; };
+		A1F96D562A48E5A5006398F2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A1F96D552A48E5A5006398F2 /* FirebaseDatabase */; };
+		A1F96D592A48EA1F006398F2 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1F96D582A48EA1F006398F2 /* FirebaseDatabaseSwift */; };
+		A1F96D5B2A48F148006398F2 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F96D5A2A48F148006398F2 /* Encodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,7 @@
 		A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		A1F96D502A48D54A006398F2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A1F96D522A48E4AF006398F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1F96D5A2A48F148006398F2 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F96D592A48EA1F006398F2 /* FirebaseDatabaseSwift in Frameworks */,
+				A1F96D562A48E5A5006398F2 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +104,7 @@
 			children = (
 				A1F96CF12A48CEB2006398F2 /* realTimeDatabase */,
 				A1F96CF02A48CEB2006398F2 /* Products */,
+				A1F96D572A48EA1F006398F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +252,7 @@
 				A1F96D312A48D2DB006398F2 /* UIColor.swift */,
 				A1F96D4E2A48D52D006398F2 /* OptionalExtension.swift */,
 				A1F96D502A48D54A006398F2 /* Alert.swift */,
+				A1F96D5A2A48F148006398F2 /* Encodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +327,13 @@
 			path = BanksCell;
 			sourceTree = "<group>";
 		};
+		A1F96D572A48EA1F006398F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +350,10 @@
 			dependencies = (
 			);
 			name = realTimeDatabase;
+			packageProductDependencies = (
+				A1F96D552A48E5A5006398F2 /* FirebaseDatabase */,
+				A1F96D582A48EA1F006398F2 /* FirebaseDatabaseSwift */,
+			);
 			productName = realTimeDatabase;
 			productReference = A1F96CEF2A48CEB2006398F2 /* realTimeDatabase.app */;
 			productType = "com.apple.product-type.application";
@@ -363,6 +382,9 @@
 				Base,
 			);
 			mainGroup = A1F96CE62A48CEB2006398F2;
+			packageReferences = (
+				A1F96D542A48E5A5006398F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A1F96CF02A48CEB2006398F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -415,6 +437,7 @@
 				A1F96D192A48D051006398F2 /* BankAccountsViewModel.swift in Sources */,
 				A1F96D432A48D3D3006398F2 /* insertNumberStrings.swift in Sources */,
 				A1F96D1B2A48D051006398F2 /* AccountCollectionViewCell.swift in Sources */,
+				A1F96D5B2A48F148006398F2 /* Encodable.swift in Sources */,
 				A1F96D262A48D1BC006398F2 /* Banks.swift in Sources */,
 				A1F96D2E2A48D284006398F2 /* globalStrings.swift in Sources */,
 				A1F96D1D2A48D051006398F2 /* BankAccountsViewController.swift in Sources */,
@@ -638,6 +661,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1F96D542A48E5A5006398F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1F96D552A48E5A5006398F2 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1F96D542A48E5A5006398F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A1F96D582A48EA1F006398F2 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1F96D542A48E5A5006398F2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1F96CE72A48CEB2006398F2 /* Project object */;
 }

@@ -128,14 +128,18 @@ class EditBankAccountsViewController: UIViewController {
     }
     
     private func saveValues(){
-        self.viewModel.saveBankAccount(newBalance: balanceValue, newAccount: BankAccount(
-            desc: self.nameTextField.text.orEmpty,
-            bank: selectedBank,
-            overdraft: overdraftValue,
-            standardAccount: self.standardAccountSwitch.isOn,
-            obs: self.obsTextField.text.orEmpty
-            ))
-        self.navigationController?.popViewController(animated: true)
+//        self.viewModel.saveBankAccount(newBalance: balanceValue, newAccount: BankAccount(
+//            desc: self.nameTextField.text.orEmpty,
+//            bank: selectedBank,
+//            overdraft: overdraftValue,
+//            standardAccount: self.standardAccountSwitch.isOn,
+//            obs: self.obsTextField.text.orEmpty
+//            ))
+//        self.navigationController?.popViewController(animated: true)
+        viewModel.saveObjectIntoDatabase()
+        viewModel.readObject() { result in
+            print("Sucesso: \(result)")
+        }
     }
     
     private func populateFields() {

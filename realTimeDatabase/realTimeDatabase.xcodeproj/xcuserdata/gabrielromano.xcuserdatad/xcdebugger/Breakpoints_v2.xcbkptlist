@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "ED30F2D8-DF80-4D80-83FC-9B1757AB50AC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/View/EditBankAccountsViewController.swift"
@@ -97,6 +97,310 @@
             startingLineNumber = "86"
             endingLineNumber = "86"
             landmarkName = "tappedSaveButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FB9BB9D-1FFD-4EC2-8CE7-A56DAB0FA289"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "saveObjectIntoDatabase()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B79B4FEA-BD92-46CE-B543-4471A3F71EB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "saveObjectIntoDatabase()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B79B4FEA-BD92-46CE-B543-4471A3F71EB6 - 758f081845574888"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realTimeDatabase.EditBankAccountsViewModel.saveObjectIntoDatabase(value: Swift.String) -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "B79B4FEA-BD92-46CE-B543-4471A3F71EB6 - 7d5bf6a6ab50fdcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realTimeDatabase.EditBankAccountsViewModel.saveObjectIntoDatabase() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CD86DBF-79B2-41B0-898A-7D0F95C340E9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "saveObjectIntoDatabase()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F316F78-86F8-489F-9343-257CA2F80C03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "readValue(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F316F78-86F8-489F-9343-257CA2F80C03 - 34914d9cbd4a323b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realTimeDatabase.EditBankAccountsViewModel.readValue() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "7F316F78-86F8-489F-9343-257CA2F80C03 - 7ffa66575c346014"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in realTimeDatabase.EditBankAccountsViewModel.readValue() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEE23981-7A63-49AB-9C2F-883838D8B386"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "readValue(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EEE23981-7A63-49AB-9C2F-883838D8B386 - 7ffa66575c3463b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in realTimeDatabase.EditBankAccountsViewModel.readValue() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "EEE23981-7A63-49AB-9C2F-883838D8B386 - c1bf91db14fb5225"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in realTimeDatabase.EditBankAccountsViewModel.readValue(completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "452">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74560FE5-58BB-4100-A875-ED7D992F0595"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "readValue(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10CD0263-8D38-4DE0-92A3-37FE3FC1F4CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "readValue(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10CD0263-8D38-4DE0-92A3-37FE3FC1F4CC - dcd60399d43fd907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realTimeDatabase.EditBankAccountsViewModel.readValue(completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "10CD0263-8D38-4DE0-92A3-37FE3FC1F4CC - c1bf91db14fb5188"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in realTimeDatabase.EditBankAccountsViewModel.readValue(completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/ViewModel/EditBankAccountsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F42E92C-32C6-4C04-A63E-0C4423C54D60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/View/EditBankAccountsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "saveValues()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F42E92C-32C6-4C04-A63E-0C4423C54D60 - fbdbf7aa15f2fb65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "realTimeDatabase.EditBankAccountsViewController.saveValues() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/View/EditBankAccountsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "2F42E92C-32C6-4C04-A63E-0C4423C54D60 - 79f2a7feccc44fb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in realTimeDatabase.EditBankAccountsViewController.saveValues() -&gt; ()"
+                  moduleName = "realTimeDatabase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielromano/LearningTests/realTimeDatabase/realTimeDatabase/Screens/EditBankAccountsViewController/View/EditBankAccountsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED947494-4A1B-4899-94C9-CE12DB64059F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "realTimeDatabase/Screens/EditBankAccountsViewController/View/EditBankAccountsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "saveValues()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

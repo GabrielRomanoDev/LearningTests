@@ -12,7 +12,7 @@ enum TransactionType {
     case expense
 }
 
-struct Transactions{
+struct Transactions {
     var desc:String
     var amount:Double
     var categoryIndex:Int
